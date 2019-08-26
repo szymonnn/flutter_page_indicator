@@ -1,4 +1,4 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter_web/widgets.dart';
 
 abstract class IndicatorShape {
   const IndicatorShape._();
