@@ -6,11 +6,11 @@ email: cjl_spy@163.com
 homepage: https://github.com/CaiJingLong/flutter_page_indicator
 
 dependencies:
-  flutter:
-    sdk: flutter
+  flutter_web: any
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  flutter_web_test: any
+  build_runner: ^1.4.0
+  build_web_compilers: ^2.0.0
 
 flutter:
   # To add assets to your package, add an assets section, like this:
@@ -46,3 +46,17 @@ flutter:
 environment:
   sdk: '>=2.0.0-dev.28.0 <3.0.0'
   flutter: '>=0.3.0 <2.0.0'
+  
+dependency_overrides:
+  flutter_web:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web
+  flutter_web_ui:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_ui
+  flutter_web_test:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_test
